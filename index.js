@@ -1,4 +1,5 @@
-var jsonify = require('jsonify');
+var jsonify = require('jsonify'),
+    Type = require('type-of-is');
 
 var stringify = (function() {
     var DECIMALS = 4;
@@ -13,8 +14,8 @@ var stringify = (function() {
 
         function typeComment(x) {
             if (x === null || x === undefined) return '';
-            if (x.constructor.name) {
-                return ' // ' + x.constructor.name;
+            if (Type.of(x)) {
+                return ' // ' + Type.string(x);
             } else return '';
         }
 
