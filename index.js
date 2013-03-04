@@ -1,3 +1,5 @@
+var jsonify = require('jsonify');
+
 var stringify = (function() {
     var DECIMALS = 4;
 
@@ -25,7 +27,7 @@ var stringify = (function() {
                 return maxFixed(x) + typeComment(x);
             default:
                 try {
-                    return JSON.stringify(x) + typeComment(x);
+                    return jsonify.stringify(x) + typeComment(x);
                 } catch(e) { return ''; }
         }
     }
