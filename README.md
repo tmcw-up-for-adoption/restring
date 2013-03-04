@@ -1,5 +1,7 @@
 ## restring
 
+![](http://ci.testling.com/tmcw/restring.png)
+
 A slightly nicer `JSON.stringify`.
 
 ### example
@@ -16,8 +18,8 @@ var restring = require('restring');
 > restring({})
 "{} // Object"
 
-> restring(new Date('03/03/2003'))
-'"2003-03-03T05:00:00.000Z" // Date'
+> restring(new Date('03/03/2003 GMT'))
+'"2003-03-03T00:00:00.000Z" // Date'
 
 > restring.decimals(10)(1/3)
 '0.3333333333 // Number'

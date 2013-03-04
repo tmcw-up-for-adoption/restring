@@ -37,5 +37,5 @@ test('decimals', function (t) {
 
 test('date', function (t) {
     t.plan(1);
-    t.same(restring(new Date('03/03/2003')), '"2003-03-03T05:00:00.000Z" // Date');
+    t.same(restring(new Date('03/03/2003 GMT')), '"2003-03-03T00:00:00.000Z" // Date');
 });
