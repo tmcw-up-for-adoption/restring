@@ -41,6 +41,8 @@ With npm do:
 
     npm install restring
 
+Otherwise use `restring.js`.
+
 ### license
 
 BSD
