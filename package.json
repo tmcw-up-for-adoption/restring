@@ -46,7 +46,7 @@
     "functions"
   ],
   "author": "Tom MacWright <tom@macwright.org>",
-  "license": "BSD",
+  "license": "BSD-2-Clause",
   "dependencies": {
     "jsonify": "0.0.0",
     "type-of-is": "~3.5.1"
