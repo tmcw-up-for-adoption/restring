@@ -15,6 +15,9 @@ var stringify = (function() {
         function typeComment(x) {
             if (x === null || x === undefined) return '';
             if (Type.of(x)) {
+                if (Type.string(x) == 'Error' && x.message) {
+                    return ' // ' + Type.string(x) + ' "' + x.message + '"';
+                }
                 return ' // ' + Type.string(x);
             } else return '';
         }

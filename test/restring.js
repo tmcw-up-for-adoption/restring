@@ -29,6 +29,11 @@ test('fractional', function (t) {
     t.same(restring(1/3), '0.3333 // Number');
 });
 
+test('error', function (t) {
+    t.plan(1);
+    t.same(restring(new Error('This is the message')), '{} // Error "This is the message"');
+});
+
 test('decimals', function (t) {
     t.plan(1);
     t.same(restring.decimals(10)(1/3), '0.3333333333 // Number');
