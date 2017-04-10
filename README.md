@@ -1,5 +1,7 @@
 ## restring
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tmcw/restring.svg)](https://greenkeeper.io/)
+
 [![](http://ci.testling.com/tmcw/restring.png)](http://ci.testling.com/tmcw/restring)
 
 A slightly nicer `JSON.stringify`.
